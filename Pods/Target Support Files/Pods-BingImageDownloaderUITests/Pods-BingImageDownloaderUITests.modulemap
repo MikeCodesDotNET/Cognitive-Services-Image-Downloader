@@ -1,0 +1,6 @@
+framework module Pods_BingImageDownloaderUITests {
+  umbrella header "Pods-BingImageDownloaderUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

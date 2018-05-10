@@ -1,0 +1,1006 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		790887AE260B1BA4EEA3CC6B /* Pods_BingImageDownloader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3217789DA643DE83A9755310 /* Pods_BingImageDownloader.framework */; };
+		9C07913D209EEE67008C216B /* QuickLookExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C07913C209EEE67008C216B /* QuickLookExtensions.swift */; };
+		9C079142209EF9A5008C216B /* ImageCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C079141209EF9A5008C216B /* ImageCollectionView.swift */; };
+		9C079145209EFA18008C216B /* ImageCollectionViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C079144209EFA18008C216B /* ImageCollectionViewDelegate.swift */; };
+		9C079147209EFA57008C216B /* ImageCollectionViewItemDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C079146209EFA57008C216B /* ImageCollectionViewItemDelegate.swift */; };
+		9C21E0B9209F36900067326C /* ExportSidebarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C21E0B8209F36900067326C /* ExportSidebarViewController.swift */; };
+		9C21E0BB209F398E0067326C /* KeyBindingsExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C21E0BA209F398E0067326C /* KeyBindingsExtensions.swift */; };
+		9C21E0C0209F47AA0067326C /* ConfigurationRequiredViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C21E0BF209F47AA0067326C /* ConfigurationRequiredViewController.swift */; };
+		9C2520302087597800756D39 /* FilterImageType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C25202F2087597800756D39 /* FilterImageType.swift */; };
+		9C25203220875A6700756D39 /* FilterSafeSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C25203120875A6700756D39 /* FilterSafeSearch.swift */; };
+		9C25203420875AAE00756D39 /* FilterFreshness.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C25203320875AAE00756D39 /* FilterFreshness.swift */; };
+		9C25203820875B5000756D39 /* FilterSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C25203720875B5000756D39 /* FilterSize.swift */; };
+		9C3A126B20A1DC52007C6511 /* PlaceholderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3A126A20A1DC52007C6511 /* PlaceholderView.swift */; };
+		9C3A7862208772A300FB91E6 /* PreferencesWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3A7861208772A300FB91E6 /* PreferencesWindowController.swift */; };
+		9C3A7864208772E300FB91E6 /* UserDefaultsPreferencesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3A7863208772E300FB91E6 /* UserDefaultsPreferencesViewController.swift */; };
+		9C3B65CF209DA6170014BA23 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3B65CE209DA6170014BA23 /* Notifications.swift */; };
+		9C4489432086840A00D33447 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C4489422086840A00D33447 /* AppDelegate.swift */; };
+		9C4489452086840A00D33447 /* ImageCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C4489442086840A00D33447 /* ImageCollectionViewController.swift */; };
+		9C4489472086840C00D33447 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C4489462086840C00D33447 /* Assets.xcassets */; };
+		9C44894A2086840C00D33447 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C4489482086840C00D33447 /* Main.storyboard */; };
+		9C4489562086840C00D33447 /* BingImageDownloaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C4489552086840C00D33447 /* BingImageDownloaderTests.swift */; };
+		9C4489612086840C00D33447 /* BingImageDownloaderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C4489602086840C00D33447 /* BingImageDownloaderUITests.swift */; };
+		9C44897320868AC000D33447 /* FilterColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C44897220868AC000D33447 /* FilterColors.swift */; };
+		9C44897A20868BFE00D33447 /* MainWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C44897920868BFE00D33447 /* MainWindowController.swift */; };
+		9C44897C2086A95400D33447 /* ImageExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C44897B2086A95400D33447 /* ImageExtensions.swift */; };
+		9C44897E2086AA7500D33447 /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C44897D2086AA7500D33447 /* UserDefaults.swift */; };
+		9C5AAE9C209DCBFF00CC168F /* AppData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5AAE9B209DCBFF00CC168F /* AppData.swift */; };
+		9C7F15EE2099AA960028026A /* ImageSearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7F15ED2099AA960028026A /* ImageSearchResult.swift */; };
+		9C7F15F02099AB420028026A /* EncodingFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7F15EF2099AB420028026A /* EncodingFormat.swift */; };
+		9C7F15F22099AC7D0028026A /* ImageResultWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7F15F12099AC7D0028026A /* ImageResultWrapper.swift */; };
+		9C7F15F42099AD2C0028026A /* BingImageSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7F15F32099AD2C0028026A /* BingImageSearch.swift */; };
+		9C7F15F8209A06B10028026A /* ImageCollectionViewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7F15F7209A06B10028026A /* ImageCollectionViewItem.swift */; };
+		9C7F15FC209A110E0028026A /* ImageCollectionViewItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C7F15FB209A110D0028026A /* ImageCollectionViewItem.xib */; };
+		9CD2D327208E3C6A00D3E6C2 /* ImageServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD2D326208E3C6A00D3E6C2 /* ImageServiceProtocol.swift */; };
+		9CD2D32B208E7B2E00D3E6C2 /* ImagesExportProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD2D32A208E7B2E00D3E6C2 /* ImagesExportProtocol.swift */; };
+		F3D462846014551026867013 /* Pods_BingImageDownloaderUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ABC1A7C42049BD77D17C66B /* Pods_BingImageDownloaderUITests.framework */; };
+		FC9CAB67C1F2B4D80775EB12 /* Pods_BingImageDownloaderTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61FE91D72D4FEC012B0334DF /* Pods_BingImageDownloaderTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9C4489522086840C00D33447 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9C4489372086840A00D33447 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9C44893E2086840A00D33447;
+			remoteInfo = BingImageDownloader;
+		};
+		9C44895D2086840C00D33447 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9C4489372086840A00D33447 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9C44893E2086840A00D33447;
+			remoteInfo = BingImageDownloader;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3217789DA643DE83A9755310 /* Pods_BingImageDownloader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BingImageDownloader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		54B2E145897E09031FDAF285 /* Pods-BingImageDownloaderUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BingImageDownloaderUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BingImageDownloaderUITests/Pods-BingImageDownloaderUITests.release.xcconfig"; sourceTree = "<group>"; };
+		61FE91D72D4FEC012B0334DF /* Pods_BingImageDownloaderTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BingImageDownloaderTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		66052796372B3B563B48CAD1 /* Pods-BingImageDownloaderUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BingImageDownloaderUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BingImageDownloaderUITests/Pods-BingImageDownloaderUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		7ABC1A7C42049BD77D17C66B /* Pods_BingImageDownloaderUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BingImageDownloaderUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F992B01B8A598C79EE7D560 /* Pods-BingImageDownloaderTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BingImageDownloaderTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BingImageDownloaderTests/Pods-BingImageDownloaderTests.release.xcconfig"; sourceTree = "<group>"; };
+		9403C30895D1466EDD04964D /* Pods-BingImageDownloader.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BingImageDownloader.release.xcconfig"; path = "Pods/Target Support Files/Pods-BingImageDownloader/Pods-BingImageDownloader.release.xcconfig"; sourceTree = "<group>"; };
+		9C07913C209EEE67008C216B /* QuickLookExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickLookExtensions.swift; sourceTree = "<group>"; };
+		9C079141209EF9A5008C216B /* ImageCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionView.swift; sourceTree = "<group>"; };
+		9C079144209EFA18008C216B /* ImageCollectionViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewDelegate.swift; sourceTree = "<group>"; };
+		9C079146209EFA57008C216B /* ImageCollectionViewItemDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewItemDelegate.swift; sourceTree = "<group>"; };
+		9C21E0B8209F36900067326C /* ExportSidebarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExportSidebarViewController.swift; sourceTree = "<group>"; };
+		9C21E0BA209F398E0067326C /* KeyBindingsExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyBindingsExtensions.swift; sourceTree = "<group>"; };
+		9C21E0BF209F47AA0067326C /* ConfigurationRequiredViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationRequiredViewController.swift; sourceTree = "<group>"; };
+		9C25202F2087597800756D39 /* FilterImageType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterImageType.swift; sourceTree = "<group>"; };
+		9C25203120875A6700756D39 /* FilterSafeSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterSafeSearch.swift; sourceTree = "<group>"; };
+		9C25203320875AAE00756D39 /* FilterFreshness.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterFreshness.swift; sourceTree = "<group>"; };
+		9C25203720875B5000756D39 /* FilterSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterSize.swift; sourceTree = "<group>"; };
+		9C3A126A20A1DC52007C6511 /* PlaceholderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceholderView.swift; sourceTree = "<group>"; };
+		9C3A126C20A1EAF1007C6511 /* Bing Image Downloader.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Bing Image Downloader.entitlements"; sourceTree = "<group>"; };
+		9C3A7861208772A300FB91E6 /* PreferencesWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesWindowController.swift; sourceTree = "<group>"; };
+		9C3A7863208772E300FB91E6 /* UserDefaultsPreferencesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsPreferencesViewController.swift; sourceTree = "<group>"; };
+		9C3B65CE209DA6170014BA23 /* Notifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notifications.swift; sourceTree = "<group>"; };
+		9C44893F2086840A00D33447 /* Bing Image Downloader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bing Image Downloader.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C4489422086840A00D33447 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9C4489442086840A00D33447 /* ImageCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewController.swift; sourceTree = "<group>"; };
+		9C4489462086840C00D33447 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9C4489492086840C00D33447 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9C44894B2086840C00D33447 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9C44894C2086840C00D33447 /* BingImageDownloader.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BingImageDownloader.entitlements; sourceTree = "<group>"; };
+		9C4489512086840C00D33447 /* BingImageDownloaderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BingImageDownloaderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C4489552086840C00D33447 /* BingImageDownloaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BingImageDownloaderTests.swift; sourceTree = "<group>"; };
+		9C4489572086840C00D33447 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9C44895C2086840C00D33447 /* BingImageDownloaderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BingImageDownloaderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C4489602086840C00D33447 /* BingImageDownloaderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BingImageDownloaderUITests.swift; sourceTree = "<group>"; };
+		9C4489622086840C00D33447 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9C44897220868AC000D33447 /* FilterColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterColors.swift; sourceTree = "<group>"; };
+		9C44897920868BFE00D33447 /* MainWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWindowController.swift; sourceTree = "<group>"; };
+		9C44897B2086A95400D33447 /* ImageExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageExtensions.swift; sourceTree = "<group>"; };
+		9C44897D2086AA7500D33447 /* UserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
+		9C5AAE9B209DCBFF00CC168F /* AppData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppData.swift; sourceTree = "<group>"; };
+		9C7F15ED2099AA960028026A /* ImageSearchResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSearchResult.swift; sourceTree = "<group>"; };
+		9C7F15EF2099AB420028026A /* EncodingFormat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncodingFormat.swift; sourceTree = "<group>"; };
+		9C7F15F12099AC7D0028026A /* ImageResultWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageResultWrapper.swift; sourceTree = "<group>"; };
+		9C7F15F32099AD2C0028026A /* BingImageSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BingImageSearch.swift; sourceTree = "<group>"; };
+		9C7F15F7209A06B10028026A /* ImageCollectionViewItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewItem.swift; sourceTree = "<group>"; };
+		9C7F15FB209A110D0028026A /* ImageCollectionViewItem.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ImageCollectionViewItem.xib; path = "../../../../Downloads/CollectionViewSwift4-master 2/CollectionViewSwift4/ImageCollectionViewItem.xib"; sourceTree = "<group>"; };
+		9CD2D326208E3C6A00D3E6C2 /* ImageServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageServiceProtocol.swift; sourceTree = "<group>"; };
+		9CD2D32A208E7B2E00D3E6C2 /* ImagesExportProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesExportProtocol.swift; sourceTree = "<group>"; };
+		9CE49DF3ECCA5DE5A2336F7C /* Pods-BingImageDownloader.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BingImageDownloader.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BingImageDownloader/Pods-BingImageDownloader.debug.xcconfig"; sourceTree = "<group>"; };
+		CEE47A4FB202AE0EBF124EE1 /* Pods-BingImageDownloaderTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BingImageDownloaderTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BingImageDownloaderTests/Pods-BingImageDownloaderTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9C44893C2086840A00D33447 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				790887AE260B1BA4EEA3CC6B /* Pods_BingImageDownloader.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C44894E2086840C00D33447 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC9CAB67C1F2B4D80775EB12 /* Pods_BingImageDownloaderTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C4489592086840C00D33447 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3D462846014551026867013 /* Pods_BingImageDownloaderUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7831D3C1401ED38188EDE908 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9CE49DF3ECCA5DE5A2336F7C /* Pods-BingImageDownloader.debug.xcconfig */,
+				9403C30895D1466EDD04964D /* Pods-BingImageDownloader.release.xcconfig */,
+				CEE47A4FB202AE0EBF124EE1 /* Pods-BingImageDownloaderTests.debug.xcconfig */,
+				8F992B01B8A598C79EE7D560 /* Pods-BingImageDownloaderTests.release.xcconfig */,
+				66052796372B3B563B48CAD1 /* Pods-BingImageDownloaderUITests.debug.xcconfig */,
+				54B2E145897E09031FDAF285 /* Pods-BingImageDownloaderUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		83E698130AF2BDE09A0007C4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3217789DA643DE83A9755310 /* Pods_BingImageDownloader.framework */,
+				61FE91D72D4FEC012B0334DF /* Pods_BingImageDownloaderTests.framework */,
+				7ABC1A7C42049BD77D17C66B /* Pods_BingImageDownloaderUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9C07913B209EEE48008C216B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				9C07913C209EEE67008C216B /* QuickLookExtensions.swift */,
+				9C21E0BA209F398E0067326C /* KeyBindingsExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		9C079140209EF958008C216B /* ImageCollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				9C3A126A20A1DC52007C6511 /* PlaceholderView.swift */,
+				9C4489442086840A00D33447 /* ImageCollectionViewController.swift */,
+				9C079149209EFC3E008C216B /* Controls */,
+				9C079143209EFA08008C216B /* Protocols */,
+			);
+			path = ImageCollectionView;
+			sourceTree = "<group>";
+		};
+		9C079143209EFA08008C216B /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				9C079144209EFA18008C216B /* ImageCollectionViewDelegate.swift */,
+				9C079146209EFA57008C216B /* ImageCollectionViewItemDelegate.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		9C079149209EFC3E008C216B /* Controls */ = {
+			isa = PBXGroup;
+			children = (
+				9C079141209EF9A5008C216B /* ImageCollectionView.swift */,
+				9C7F15F7209A06B10028026A /* ImageCollectionViewItem.swift */,
+			);
+			path = Controls;
+			sourceTree = "<group>";
+		};
+		9C21E0B7209F36700067326C /* ExportSidebar */ = {
+			isa = PBXGroup;
+			children = (
+				9C21E0B8209F36900067326C /* ExportSidebarViewController.swift */,
+			);
+			path = ExportSidebar;
+			sourceTree = "<group>";
+		};
+		9C21E0BE209F478B0067326C /* ConfigurationRequired */ = {
+			isa = PBXGroup;
+			children = (
+				9C21E0BF209F47AA0067326C /* ConfigurationRequiredViewController.swift */,
+			);
+			path = ConfigurationRequired;
+			sourceTree = "<group>";
+		};
+		9C25202E2087595600756D39 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				9C44897220868AC000D33447 /* FilterColors.swift */,
+				9C25202F2087597800756D39 /* FilterImageType.swift */,
+				9C25203120875A6700756D39 /* FilterSafeSearch.swift */,
+				9C25203320875AAE00756D39 /* FilterFreshness.swift */,
+				9C25203720875B5000756D39 /* FilterSize.swift */,
+				9C7F15EF2099AB420028026A /* EncodingFormat.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		9C3A785F2087728C00FB91E6 /* PreferencesWindow */ = {
+			isa = PBXGroup;
+			children = (
+				9C3A7863208772E300FB91E6 /* UserDefaultsPreferencesViewController.swift */,
+				9C3A7861208772A300FB91E6 /* PreferencesWindowController.swift */,
+			);
+			path = PreferencesWindow;
+			sourceTree = "<group>";
+		};
+		9C3A78602087729600FB91E6 /* MainWindow */ = {
+			isa = PBXGroup;
+			children = (
+				9C44897920868BFE00D33447 /* MainWindowController.swift */,
+				9C07913B209EEE48008C216B /* Extensions */,
+				9C079140209EF958008C216B /* ImageCollectionView */,
+				9C21E0B7209F36700067326C /* ExportSidebar */,
+				9C21E0BE209F478B0067326C /* ConfigurationRequired */,
+			);
+			path = MainWindow;
+			sourceTree = "<group>";
+		};
+		9C4489362086840A00D33447 = {
+			isa = PBXGroup;
+			children = (
+				9C4489412086840A00D33447 /* BingImageDownloader */,
+				9C4489542086840C00D33447 /* BingImageDownloaderTests */,
+				9C44895F2086840C00D33447 /* BingImageDownloaderUITests */,
+				9C4489402086840A00D33447 /* Products */,
+				7831D3C1401ED38188EDE908 /* Pods */,
+				83E698130AF2BDE09A0007C4 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		9C4489402086840A00D33447 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9C44893F2086840A00D33447 /* Bing Image Downloader.app */,
+				9C4489512086840C00D33447 /* BingImageDownloaderTests.xctest */,
+				9C44895C2086840C00D33447 /* BingImageDownloaderUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9C4489412086840A00D33447 /* BingImageDownloader */ = {
+			isa = PBXGroup;
+			children = (
+				9C3A126C20A1EAF1007C6511 /* Bing Image Downloader.entitlements */,
+				9C44897720868BEB00D33447 /* Windows */,
+				9C44897420868B5400D33447 /* Helpers */,
+				9C44897120868AB200D33447 /* Models */,
+				9C44896E208689C900D33447 /* Services */,
+				9C4489422086840A00D33447 /* AppDelegate.swift */,
+				9C4489462086840C00D33447 /* Assets.xcassets */,
+				9C7F15FB209A110D0028026A /* ImageCollectionViewItem.xib */,
+				9C4489482086840C00D33447 /* Main.storyboard */,
+				9C44894B2086840C00D33447 /* Info.plist */,
+				9C44894C2086840C00D33447 /* BingImageDownloader.entitlements */,
+			);
+			path = BingImageDownloader;
+			sourceTree = "<group>";
+		};
+		9C4489542086840C00D33447 /* BingImageDownloaderTests */ = {
+			isa = PBXGroup;
+			children = (
+				9C4489552086840C00D33447 /* BingImageDownloaderTests.swift */,
+				9C4489572086840C00D33447 /* Info.plist */,
+			);
+			path = BingImageDownloaderTests;
+			sourceTree = "<group>";
+		};
+		9C44895F2086840C00D33447 /* BingImageDownloaderUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9C4489602086840C00D33447 /* BingImageDownloaderUITests.swift */,
+				9C4489622086840C00D33447 /* Info.plist */,
+			);
+			path = BingImageDownloaderUITests;
+			sourceTree = "<group>";
+		};
+		9C44896E208689C900D33447 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				9CB8A63020976CAA00F13A0E /* Protocols */,
+				9C7F15F32099AD2C0028026A /* BingImageSearch.swift */,
+				9C5AAE9B209DCBFF00CC168F /* AppData.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		9C44897120868AB200D33447 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9C25202E2087595600756D39 /* Enums */,
+				9C7F15ED2099AA960028026A /* ImageSearchResult.swift */,
+				9C7F15F12099AC7D0028026A /* ImageResultWrapper.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		9C44897420868B5400D33447 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				9C44897B2086A95400D33447 /* ImageExtensions.swift */,
+				9C44897D2086AA7500D33447 /* UserDefaults.swift */,
+				9C3B65CE209DA6170014BA23 /* Notifications.swift */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		9C44897720868BEB00D33447 /* Windows */ = {
+			isa = PBXGroup;
+			children = (
+				9C3A78602087729600FB91E6 /* MainWindow */,
+				9C3A785F2087728C00FB91E6 /* PreferencesWindow */,
+			);
+			path = Windows;
+			sourceTree = "<group>";
+		};
+		9CB8A63020976CAA00F13A0E /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				9CD2D32A208E7B2E00D3E6C2 /* ImagesExportProtocol.swift */,
+				9CD2D326208E3C6A00D3E6C2 /* ImageServiceProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9C44893E2086840A00D33447 /* BingImageDownloader */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9C4489652086840C00D33447 /* Build configuration list for PBXNativeTarget "BingImageDownloader" */;
+			buildPhases = (
+				F9CBB499FF8631EEA71B9336 /* [CP] Check Pods Manifest.lock */,
+				9C44893B2086840A00D33447 /* Sources */,
+				9C44893C2086840A00D33447 /* Frameworks */,
+				9C44893D2086840A00D33447 /* Resources */,
+				96BC339A05812DCF01A00846 /* [CP] Embed Pods Frameworks */,
+				54BFD0A5C3471DDCE9AB3197 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BingImageDownloader;
+			productName = BingImageDownloader;
+			productReference = 9C44893F2086840A00D33447 /* Bing Image Downloader.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9C4489502086840C00D33447 /* BingImageDownloaderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9C4489682086840C00D33447 /* Build configuration list for PBXNativeTarget "BingImageDownloaderTests" */;
+			buildPhases = (
+				89BA59D55C90469677C2F4BC /* [CP] Check Pods Manifest.lock */,
+				9C44894D2086840C00D33447 /* Sources */,
+				9C44894E2086840C00D33447 /* Frameworks */,
+				9C44894F2086840C00D33447 /* Resources */,
+				E793A366E099A36A94276AE3 /* [CP] Embed Pods Frameworks */,
+				35F294F1C9F4F046303ABF1B /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9C4489532086840C00D33447 /* PBXTargetDependency */,
+			);
+			name = BingImageDownloaderTests;
+			productName = BingImageDownloaderTests;
+			productReference = 9C4489512086840C00D33447 /* BingImageDownloaderTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9C44895B2086840C00D33447 /* BingImageDownloaderUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9C44896B2086840C00D33447 /* Build configuration list for PBXNativeTarget "BingImageDownloaderUITests" */;
+			buildPhases = (
+				CBEA266FD6CCD3CC044D2E15 /* [CP] Check Pods Manifest.lock */,
+				9C4489582086840C00D33447 /* Sources */,
+				9C4489592086840C00D33447 /* Frameworks */,
+				9C44895A2086840C00D33447 /* Resources */,
+				82B9110A598C207DB2987B02 /* [CP] Embed Pods Frameworks */,
+				BA32981A2304E8397FE846D5 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9C44895E2086840C00D33447 /* PBXTargetDependency */,
+			);
+			name = BingImageDownloaderUITests;
+			productName = BingImageDownloaderUITests;
+			productReference = 9C44895C2086840C00D33447 /* BingImageDownloaderUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9C4489372086840A00D33447 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "Mike JAmes";
+				TargetAttributes = {
+					9C44893E2086840A00D33447 = {
+						CreatedOnToolsVersion = 9.3;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
+					};
+					9C4489502086840C00D33447 = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = 9C44893E2086840A00D33447;
+					};
+					9C44895B2086840C00D33447 = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = 9C44893E2086840A00D33447;
+					};
+				};
+			};
+			buildConfigurationList = 9C44893A2086840A00D33447 /* Build configuration list for PBXProject "BingImageDownloader" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9C4489362086840A00D33447;
+			productRefGroup = 9C4489402086840A00D33447 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9C44893E2086840A00D33447 /* BingImageDownloader */,
+				9C4489502086840C00D33447 /* BingImageDownloaderTests */,
+				9C44895B2086840C00D33447 /* BingImageDownloaderUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9C44893D2086840A00D33447 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C7F15FC209A110E0028026A /* ImageCollectionViewItem.xib in Resources */,
+				9C4489472086840C00D33447 /* Assets.xcassets in Resources */,
+				9C44894A2086840C00D33447 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C44894F2086840C00D33447 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C44895A2086840C00D33447 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		35F294F1C9F4F046303ABF1B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BingImageDownloaderTests/Pods-BingImageDownloaderTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		54BFD0A5C3471DDCE9AB3197 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BingImageDownloader/Pods-BingImageDownloader-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		82B9110A598C207DB2987B02 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BingImageDownloaderUITests/Pods-BingImageDownloaderUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		89BA59D55C90469677C2F4BC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BingImageDownloaderTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		96BC339A05812DCF01A00846 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-BingImageDownloader/Pods-BingImageDownloader-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Locksmith/Locksmith.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyBeaver/SwiftyBeaver.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Locksmith.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyBeaver.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BingImageDownloader/Pods-BingImageDownloader-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BA32981A2304E8397FE846D5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BingImageDownloaderUITests/Pods-BingImageDownloaderUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CBEA266FD6CCD3CC044D2E15 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BingImageDownloaderUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E793A366E099A36A94276AE3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BingImageDownloaderTests/Pods-BingImageDownloaderTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F9CBB499FF8631EEA71B9336 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BingImageDownloader-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9C44893B2086840A00D33447 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C7F15EE2099AA960028026A /* ImageSearchResult.swift in Sources */,
+				9C5AAE9C209DCBFF00CC168F /* AppData.swift in Sources */,
+				9C079147209EFA57008C216B /* ImageCollectionViewItemDelegate.swift in Sources */,
+				9C4489452086840A00D33447 /* ImageCollectionViewController.swift in Sources */,
+				9C3B65CF209DA6170014BA23 /* Notifications.swift in Sources */,
+				9CD2D32B208E7B2E00D3E6C2 /* ImagesExportProtocol.swift in Sources */,
+				9C7F15F8209A06B10028026A /* ImageCollectionViewItem.swift in Sources */,
+				9C44897A20868BFE00D33447 /* MainWindowController.swift in Sources */,
+				9C25203220875A6700756D39 /* FilterSafeSearch.swift in Sources */,
+				9C44897E2086AA7500D33447 /* UserDefaults.swift in Sources */,
+				9C25203820875B5000756D39 /* FilterSize.swift in Sources */,
+				9C44897320868AC000D33447 /* FilterColors.swift in Sources */,
+				9C3A126B20A1DC52007C6511 /* PlaceholderView.swift in Sources */,
+				9C07913D209EEE67008C216B /* QuickLookExtensions.swift in Sources */,
+				9C4489432086840A00D33447 /* AppDelegate.swift in Sources */,
+				9C7F15F42099AD2C0028026A /* BingImageSearch.swift in Sources */,
+				9C7F15F22099AC7D0028026A /* ImageResultWrapper.swift in Sources */,
+				9C21E0B9209F36900067326C /* ExportSidebarViewController.swift in Sources */,
+				9C21E0BB209F398E0067326C /* KeyBindingsExtensions.swift in Sources */,
+				9C079142209EF9A5008C216B /* ImageCollectionView.swift in Sources */,
+				9C7F15F02099AB420028026A /* EncodingFormat.swift in Sources */,
+				9C21E0C0209F47AA0067326C /* ConfigurationRequiredViewController.swift in Sources */,
+				9C44897C2086A95400D33447 /* ImageExtensions.swift in Sources */,
+				9C079145209EFA18008C216B /* ImageCollectionViewDelegate.swift in Sources */,
+				9C2520302087597800756D39 /* FilterImageType.swift in Sources */,
+				9C3A7864208772E300FB91E6 /* UserDefaultsPreferencesViewController.swift in Sources */,
+				9CD2D327208E3C6A00D3E6C2 /* ImageServiceProtocol.swift in Sources */,
+				9C3A7862208772A300FB91E6 /* PreferencesWindowController.swift in Sources */,
+				9C25203420875AAE00756D39 /* FilterFreshness.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C44894D2086840C00D33447 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C4489562086840C00D33447 /* BingImageDownloaderTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C4489582086840C00D33447 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C4489612086840C00D33447 /* BingImageDownloaderUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9C4489532086840C00D33447 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9C44893E2086840A00D33447 /* BingImageDownloader */;
+			targetProxy = 9C4489522086840C00D33447 /* PBXContainerItemProxy */;
+		};
+		9C44895E2086840C00D33447 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9C44893E2086840A00D33447 /* BingImageDownloader */;
+			targetProxy = 9C44895D2086840C00D33447 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9C4489482086840C00D33447 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9C4489492086840C00D33447 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9C4489632086840C00D33447 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9C4489642086840C00D33447 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		9C4489662086840C00D33447 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9CE49DF3ECCA5DE5A2336F7C /* Pods-BingImageDownloader.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "BingImageDownloader/Bing Image Downloader.entitlements";
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = BCTYCQPYCZ;
+				INFOPLIST_FILE = BingImageDownloader/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mikecodesdotnet.BingImageDownloader;
+				PRODUCT_NAME = "Bing Image Downloader";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		9C4489672086840C00D33447 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9403C30895D1466EDD04964D /* Pods-BingImageDownloader.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "BingImageDownloader/Bing Image Downloader.entitlements";
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = BCTYCQPYCZ;
+				INFOPLIST_FILE = BingImageDownloader/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mikecodesdotnet.BingImageDownloader;
+				PRODUCT_NAME = "Bing Image Downloader";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		9C4489692086840C00D33447 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CEE47A4FB202AE0EBF124EE1 /* Pods-BingImageDownloaderTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = BCTYCQPYCZ;
+				INFOPLIST_FILE = BingImageDownloaderTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mikecodesdotnet.BingImageDownloaderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BingImageDownloader.app/Contents/MacOS/BingImageDownloader";
+			};
+			name = Debug;
+		};
+		9C44896A2086840C00D33447 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8F992B01B8A598C79EE7D560 /* Pods-BingImageDownloaderTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = BCTYCQPYCZ;
+				INFOPLIST_FILE = BingImageDownloaderTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mikecodesdotnet.BingImageDownloaderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BingImageDownloader.app/Contents/MacOS/BingImageDownloader";
+			};
+			name = Release;
+		};
+		9C44896C2086840C00D33447 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 66052796372B3B563B48CAD1 /* Pods-BingImageDownloaderUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = BCTYCQPYCZ;
+				INFOPLIST_FILE = BingImageDownloaderUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mikecodesdotnet.BingImageDownloaderUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TEST_TARGET_NAME = BingImageDownloader;
+			};
+			name = Debug;
+		};
+		9C44896D2086840C00D33447 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 54B2E145897E09031FDAF285 /* Pods-BingImageDownloaderUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = BCTYCQPYCZ;
+				INFOPLIST_FILE = BingImageDownloaderUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mikecodesdotnet.BingImageDownloaderUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TEST_TARGET_NAME = BingImageDownloader;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9C44893A2086840A00D33447 /* Build configuration list for PBXProject "BingImageDownloader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9C4489632086840C00D33447 /* Debug */,
+				9C4489642086840C00D33447 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9C4489652086840C00D33447 /* Build configuration list for PBXNativeTarget "BingImageDownloader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9C4489662086840C00D33447 /* Debug */,
+				9C4489672086840C00D33447 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9C4489682086840C00D33447 /* Build configuration list for PBXNativeTarget "BingImageDownloaderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9C4489692086840C00D33447 /* Debug */,
+				9C44896A2086840C00D33447 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9C44896B2086840C00D33447 /* Build configuration list for PBXNativeTarget "BingImageDownloaderUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9C44896C2086840C00D33447 /* Debug */,
+				9C44896D2086840C00D33447 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9C4489372086840A00D33447 /* Project object */;
+}
