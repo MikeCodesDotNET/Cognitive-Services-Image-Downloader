@@ -7,34 +7,29 @@
 //
 
 import Cocoa
-import SwiftyBeaver
+import AppCenter
+import AppCenterAnalytics
+import AppCenterCrashes
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
-
-    let log = SwiftyBeaver.self
-
     
-    @IBAction func deleteMenuItemClicked(_ sender: NSMenuItem) {
-        
-    }
-
+    @IBAction func deleteMenuItemClicked(_ sender: NSMenuItem) {}
     
     @IBAction func deleteAllMenuItemClicked(_ sender: NSMenuItem) {
-        AppData.shared.clearAll()
+        let cleared = AppData.shared.clearAll()
+        print(cleared)
     }
     
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         // Insert code here to initialize your application
-        setupLogging()
+        MSAppCenter.start("892b4073-c8a2-4ee7-af52-fca3fffecba9", withServices: [MSCrashes.self, MSAnalytics.self])
         setupUserDefaults()
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {
         // Insert code here to tear down your application
     }
-    
-
     
     func setupUserDefaults()
     {
@@ -53,32 +48,10 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
     }
     
-    func setupLogging()
-    {
-        // add log destinations. at least one is needed!
-        let console = ConsoleDestination()  // log to Xcode Console
-        let file = FileDestination()  // log to default swiftybeaver.log file
-        let cloud = SBPlatformDestination(appID: "Gw3GBb", appSecret: "cLjecdl2pfuisvbnAZaypuuOsvctqvid", encryptionKey: "52gajI0ii9bfx4vrhte6xpanpx16dARy") // to cloud
-        
-        cloud.minLevel = SwiftyBeaver.Level.verbose
-        
-        // use custom format and set console output to short time, log level & message
-        console.format = "$DHH:mm:ss$d $L $M"
-        // or use this for JSON output: console.format = "$J"
-        
-        // add the destinations to SwiftyBeaver
-        log.addDestination(console)
-        log.addDestination(file)
-        log.addDestination(cloud)
-
-    }
-
-
     // MARK - Menu
     @IBAction func ToggleInfo(_ sender: Any) {
         NotificationCenter.default.post(name: .toggleSideBar, object: nil)
     }
-    
     
 }
 

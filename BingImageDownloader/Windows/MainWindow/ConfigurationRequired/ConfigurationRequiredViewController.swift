@@ -9,6 +9,9 @@
 import Cocoa
 import CoreGraphics
 import SwiftyBeaver
+import AppCenter
+import AppCenterAnalytics
+import AppCenterCrashes
 
 public class ConfigurationRequiredViewController : NSViewController {
     
@@ -23,13 +26,13 @@ public class ConfigurationRequiredViewController : NSViewController {
     
     func openDocumentationInWebBrowser(){
         if let url = URL(string: "https://azure.microsoft.com/en-us/services/cognitive-services/bing-image-search-api/"), NSWorkspace.shared.open(url) {
-            log.info("User requested documentation")
+            MSAnalytics.trackEvent("Sent user to Custom Bing Search documentation")
         }
     }
     
     func openApiRequestInWebBrowser(){
         if let url = URL(string: "https://azure.microsoft.com/en-us/try/cognitive-services/?api=search-api-v7"), NSWorkspace.shared.open(url) {
-            log.info("User requested API Key")
+            MSAnalytics.trackEvent("User Requested API Key")
         }
     }
     

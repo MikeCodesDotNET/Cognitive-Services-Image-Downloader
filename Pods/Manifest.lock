@@ -1,5 +1,13 @@
 PODS:
   - Alamofire (4.7.0)
+  - AppCenter (1.5.0):
+    - AppCenter/Analytics (= 1.5.0)
+    - AppCenter/Crashes (= 1.5.0)
+  - AppCenter/Analytics (1.5.0):
+    - AppCenter/Core
+  - AppCenter/Core (1.5.0)
+  - AppCenter/Crashes (1.5.0):
+    - AppCenter/Core
   - Locksmith (4.0.0)
   - SDWebImage (4.3.3):
     - SDWebImage/Core (= 4.3.3)
@@ -9,6 +17,7 @@ PODS:
 
 DEPENDENCIES:
   - Alamofire (~> 4.7)
+  - AppCenter
   - Locksmith
   - SDWebImage (~> 4.3.3)
   - SwiftLint
@@ -16,11 +25,12 @@ DEPENDENCIES:
 
 SPEC CHECKSUMS:
   Alamofire: 907e0a98eb68cdb7f9d1f541a563d6ac5dc77b25
+  AppCenter: 42c293f0de27e173aacd600a55a49da5317cd40e
   Locksmith: e9bebbaaa4cee3c511bc358a44f843c3fe00e21f
   SDWebImage: de4d90b5bff3571eae7bd16202b1f43135409fa5
   SwiftLint: e14651157288e9e01d6e1a71db7014fb5744a8ea
   SwiftyBeaver: 4f74563624b2c1e821c522c54142b5dd5ebb0f30
 
-PODFILE CHECKSUM: e5ee3cf39a8fb9a54c02c404d88b90c7f7f57b39
+PODFILE CHECKSUM: 46a55d67108da0058840d0159aacf9dc6c2da2b9
 
 COCOAPODS: 1.4.0

@@ -10,6 +10,9 @@ import Foundation
 import AppKit
 import Quartz
 import SwiftyBeaver
+import AppCenter
+import AppCenterAnalytics
+import AppCenterCrashes
 
 public class MainWindowController : NSWindowController, NSWindowDelegate,  imageSeletionDelegate {
     
@@ -88,6 +91,8 @@ public class MainWindowController : NSWindowController, NSWindowDelegate,  image
         //Ensure we're not searching with no text values
         if(!searchTerm.isEmpty){
             self.log.info("Searched for: \(searchTerm)")
+            
+            MSAnalytics.trackEvent("Searched", withProperties: ["Query" : searchTerm])
             imageDownloader.searchForImageTerm(searchTerm: searchTerm)
         }
         

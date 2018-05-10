@@ -9,6 +9,8 @@ target 'BingImageDownloader' do
   pod 'SwiftLint'
   pod 'SwiftyBeaver'
   pod 'Locksmith' 
+  pod 'AppCenter'
+ 
 
 
   # Pods for BingImageDownloader
