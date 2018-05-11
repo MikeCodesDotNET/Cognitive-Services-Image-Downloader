@@ -4,11 +4,11 @@
 <dict>
 	<key>com.apple.security.application-groups</key>
 	<array>
-		<string>$(TeamIdentifierPrefix)</string>
+		<string>iCloud.mikecodes.net.bingimagedownloader</string>
 	</array>
 	<key>keychain-access-groups</key>
 	<array>
-		<string>$(AppIdentifierPrefix)com.mikecodesdotnet.BingImageDownloader</string>
+		<string>$(AppIdentifierPrefix)com.mikecodes.net.bingimagedownloader</string>
 	</array>
 </dict>
 </plist>
