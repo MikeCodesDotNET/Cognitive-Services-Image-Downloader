@@ -872,7 +872,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				PRODUCT_BUNDLE_IDENTIFIER = com.mikecodes.net.bingimagedownloader;
 				PRODUCT_NAME = "Bing Image Downloader";
-				PROVISIONING_PROFILE = "728116be-0166-480e-b09a-d6f25a2f4edf";
+				PROVISIONING_PROFILE = "e608687d-979d-449a-b55c-4e1b8a88db2d";
 				PROVISIONING_PROFILE_SPECIFIER = "Bing Image Downloader Release";
 				SWIFT_VERSION = 4.0;
 			};
@@ -896,7 +896,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				PRODUCT_BUNDLE_IDENTIFIER = com.mikecodes.net.bingimagedownloader;
 				PRODUCT_NAME = "Bing Image Downloader";
-				PROVISIONING_PROFILE = "728116be-0166-480e-b09a-d6f25a2f4edf";
+				PROVISIONING_PROFILE = "e608687d-979d-449a-b55c-4e1b8a88db2d";
 				PROVISIONING_PROFILE_SPECIFIER = "Bing Image Downloader Release";
 				SWIFT_VERSION = 4.0;
 			};
