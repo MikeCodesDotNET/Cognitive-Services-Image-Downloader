@@ -34,12 +34,12 @@
 		9C44897C2086A95400D33447 /* ImageExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C44897B2086A95400D33447 /* ImageExtensions.swift */; };
 		9C44897E2086AA7500D33447 /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C44897D2086AA7500D33447 /* UserDefaults.swift */; };
 		9C5AAE9C209DCBFF00CC168F /* AppData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5AAE9B209DCBFF00CC168F /* AppData.swift */; };
+		9C6DB8FF20A5917100416A45 /* ImageCollectionViewItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C6DB8FE20A5917100416A45 /* ImageCollectionViewItem.xib */; };
 		9C7F15EE2099AA960028026A /* ImageSearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7F15ED2099AA960028026A /* ImageSearchResult.swift */; };
 		9C7F15F02099AB420028026A /* EncodingFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7F15EF2099AB420028026A /* EncodingFormat.swift */; };
 		9C7F15F22099AC7D0028026A /* ImageResultWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7F15F12099AC7D0028026A /* ImageResultWrapper.swift */; };
 		9C7F15F42099AD2C0028026A /* BingImageSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7F15F32099AD2C0028026A /* BingImageSearch.swift */; };
 		9C7F15F8209A06B10028026A /* ImageCollectionViewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7F15F7209A06B10028026A /* ImageCollectionViewItem.swift */; };
-		9C7F15FC209A110E0028026A /* ImageCollectionViewItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C7F15FB209A110D0028026A /* ImageCollectionViewItem.xib */; };
 		9CD2D327208E3C6A00D3E6C2 /* ImageServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD2D326208E3C6A00D3E6C2 /* ImageServiceProtocol.swift */; };
 		9CD2D32B208E7B2E00D3E6C2 /* ImagesExportProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD2D32A208E7B2E00D3E6C2 /* ImagesExportProtocol.swift */; };
 		F3D462846014551026867013 /* Pods_BingImageDownloaderUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ABC1A7C42049BD77D17C66B /* Pods_BingImageDownloaderUITests.framework */; };
@@ -105,12 +105,12 @@
 		9C44897B2086A95400D33447 /* ImageExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageExtensions.swift; sourceTree = "<group>"; };
 		9C44897D2086AA7500D33447 /* UserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
 		9C5AAE9B209DCBFF00CC168F /* AppData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppData.swift; sourceTree = "<group>"; };
+		9C6DB8FE20A5917100416A45 /* ImageCollectionViewItem.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImageCollectionViewItem.xib; sourceTree = "<group>"; };
 		9C7F15ED2099AA960028026A /* ImageSearchResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSearchResult.swift; sourceTree = "<group>"; };
 		9C7F15EF2099AB420028026A /* EncodingFormat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncodingFormat.swift; sourceTree = "<group>"; };
 		9C7F15F12099AC7D0028026A /* ImageResultWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageResultWrapper.swift; sourceTree = "<group>"; };
 		9C7F15F32099AD2C0028026A /* BingImageSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BingImageSearch.swift; sourceTree = "<group>"; };
 		9C7F15F7209A06B10028026A /* ImageCollectionViewItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewItem.swift; sourceTree = "<group>"; };
-		9C7F15FB209A110D0028026A /* ImageCollectionViewItem.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ImageCollectionViewItem.xib; path = "../../../../Downloads/CollectionViewSwift4-master 2/CollectionViewSwift4/ImageCollectionViewItem.xib"; sourceTree = "<group>"; };
 		9CD2D326208E3C6A00D3E6C2 /* ImageServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageServiceProtocol.swift; sourceTree = "<group>"; };
 		9CD2D32A208E7B2E00D3E6C2 /* ImagesExportProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesExportProtocol.swift; sourceTree = "<group>"; };
 		9CE49DF3ECCA5DE5A2336F7C /* Pods-BingImageDownloader.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BingImageDownloader.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BingImageDownloader/Pods-BingImageDownloader.debug.xcconfig"; sourceTree = "<group>"; };
@@ -288,7 +288,7 @@
 				9C44896E208689C900D33447 /* Services */,
 				9C4489422086840A00D33447 /* AppDelegate.swift */,
 				9C4489462086840C00D33447 /* Assets.xcassets */,
-				9C7F15FB209A110D0028026A /* ImageCollectionViewItem.xib */,
+				9C6DB8FE20A5917100416A45 /* ImageCollectionViewItem.xib */,
 				9C4489482086840C00D33447 /* Main.storyboard */,
 				9C44894B2086840C00D33447 /* Info.plist */,
 				9C44894C2086840C00D33447 /* BingImageDownloader.entitlements */,
@@ -483,7 +483,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9C7F15FC209A110E0028026A /* ImageCollectionViewItem.xib in Resources */,
+				9C6DB8FF20A5917100416A45 /* ImageCollectionViewItem.xib in Resources */,
 				9C4489472086840C00D33447 /* Assets.xcassets in Resources */,
 				9C44894A2086840C00D33447 /* Main.storyboard in Resources */,
 			);

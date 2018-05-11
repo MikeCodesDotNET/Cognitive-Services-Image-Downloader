@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="14109" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14109"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="LabelCollectionViewItem1" customModule="BingImageDownloader" customModuleProvider="target">
+            <connections>
+                <outlet property="loadingSpinner" destination="8Rq-BN-Jh8" id="4Ym-yH-TBb"/>
+                <outlet property="name" destination="GZR-sp-ccn" id="M10-AJ-FVT"/>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="Hz6-mo-xeY">
+            <rect key="frame" x="0.0" y="0.0" width="152" height="136"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="H3I-jQ-5mf">
+                    <rect key="frame" x="4" y="31" width="144" height="101"/>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyUpOrDown" id="500-bH-CLs"/>
+                </imageView>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" verticalCompressionResistancePriority="1000" textCompletion="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GZR-sp-ccn">
+                    <rect key="frame" x="2" y="8" width="148" height="17"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="17" id="bnl-wF-A82"/>
+                    </constraints>
+                    <textFieldCell key="cell" lineBreakMode="truncatingMiddle" sendsActionOnEndEditing="YES" alignment="center" title="Label" id="zTa-4v-oYl">
+                        <font key="font" size="11" name="HelveticaNeue"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <progressIndicator hidden="YES" wantsLayer="YES" horizontalHuggingPriority="750" verticalHuggingPriority="750" maxValue="100" bezeled="NO" indeterminate="YES" controlSize="small" style="spinning" translatesAutoresizingMaskIntoConstraints="NO" id="8Rq-BN-Jh8">
+                    <rect key="frame" x="68" y="74" width="16" height="16"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="16" id="aK9-aE-TOp"/>
+                        <constraint firstAttribute="width" constant="16" id="xhu-G4-D71"/>
+                    </constraints>
+                </progressIndicator>
+            </subviews>
+            <constraints>
+                <constraint firstItem="GZR-sp-ccn" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="4" id="4ZW-DB-PFO"/>
+                <constraint firstItem="H3I-jQ-5mf" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="4" id="4aQ-da-cCg"/>
+                <constraint firstAttribute="bottom" secondItem="GZR-sp-ccn" secondAttribute="bottom" constant="8" id="93c-95-ge1"/>
+                <constraint firstItem="GZR-sp-ccn" firstAttribute="top" secondItem="H3I-jQ-5mf" secondAttribute="bottom" constant="6" id="ArI-Fu-Opp"/>
+                <constraint firstItem="8Rq-BN-Jh8" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="68" id="HK0-bY-PR3"/>
+                <constraint firstAttribute="trailing" secondItem="GZR-sp-ccn" secondAttribute="trailing" constant="4" id="N7C-I5-gCa"/>
+                <constraint firstItem="8Rq-BN-Jh8" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="46" id="Z3x-qU-fAd"/>
+                <constraint firstAttribute="trailing" secondItem="H3I-jQ-5mf" secondAttribute="trailing" constant="4" id="gev-tm-5fm"/>
+                <constraint firstItem="H3I-jQ-5mf" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="4" id="ppL-M0-3Yd"/>
+            </constraints>
+            <point key="canvasLocation" x="-108" y="79"/>
+        </customView>
+        <customObject id="n0N-Od-tLB" customClass="ImageCollectionViewItem" customModule="BingImageDownloader" customModuleProvider="target">
+            <connections>
+                <outlet property="imageResult" destination="H3I-jQ-5mf" id="SJs-CT-UsO"/>
+                <outlet property="loadingSpinner" destination="8Rq-BN-Jh8" id="4fm-Xa-Rfb"/>
+                <outlet property="name" destination="GZR-sp-ccn" id="N3v-7n-0i4"/>
+                <outlet property="view" destination="Hz6-mo-xeY" id="fkf-md-esR"/>
+            </connections>
+        </customObject>
+        <userDefaultsController representsSharedInstance="YES" id="9tZ-cY-sjP"/>
+    </objects>
+</document>
