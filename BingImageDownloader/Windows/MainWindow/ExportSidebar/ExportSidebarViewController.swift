@@ -20,7 +20,7 @@ public class ExportSlidebarViewController : NSViewController {
     
     // MARK: View Life Cycle
     override public func viewDidLoad() {
-        outputDirectoryTextField.stringValue = UserDefaults.standard.getDefaultOutputDirectory()
+        //outputDirectoryTextField.stringValue = UserDefaults.standard.getDefaultOutputDirectory()
     }
     
     func updateSelected(items : [IndexPath]){

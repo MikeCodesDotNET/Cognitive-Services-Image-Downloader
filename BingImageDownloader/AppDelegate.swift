@@ -23,8 +23,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         // Insert code here to initialize your application
-        MSAppCenter.start("892b4073-c8a2-4ee7-af52-fca3fffecba9", withServices: [MSCrashes.self, MSAnalytics.self])
         setupUserDefaults()
+        MSAppCenter.start("892b4073-c8a2-4ee7-af52-fca3fffecba9", withServices: [MSCrashes.self, MSAnalytics.self])
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {

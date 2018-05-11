@@ -45,10 +45,7 @@ public class MainWindowController : NSWindowController, NSWindowDelegate,  image
     
     // MARK: View Lifecycle
     public override func windowDidLoad() {
-        
-        //Setting up the touchbar guff
-        outputDirectoryTouchBarLabel.stringValue = "Saving To: \(UserDefaults.standard.getDefaultOutputDirectory())"
-        
+                
         //Observing the info panel toggle
         NotificationCenter.default.addObserver(self, selector: #selector(toggleSideBar(notification:)), name: .toggleSideBar, object: nil)
         
