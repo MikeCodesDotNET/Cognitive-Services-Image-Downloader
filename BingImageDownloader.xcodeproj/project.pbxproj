@@ -441,7 +441,7 @@
 						CreatedOnToolsVersion = 9.3;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.Mac = {
-								enabled = 1;
+								enabled = 0;
 							};
 							com.apple.Keychain = {
 								enabled = 1;
