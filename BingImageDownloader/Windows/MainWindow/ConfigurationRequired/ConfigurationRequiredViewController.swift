@@ -25,13 +25,13 @@ public class ConfigurationRequiredViewController : NSViewController {
     @IBAction func validateAndSavedClicked(_ sender: NSButton) { validateApiKey() }
     
     func openDocumentationInWebBrowser(){
-        if let url = URL(string: "https://azure.microsoft.com/en-us/services/cognitive-services/bing-image-search-api/"), NSWorkspace.shared.open(url) {
+        if let url = URL(string: "https://azure.microsoft.com/en-us/services/cognitive-services/bing-image-search-api/?WT.mc_id=cognitiveServices-sampleApp-mijam"), NSWorkspace.shared.open(url) {
             MSAnalytics.trackEvent("Sent user to Custom Bing Search documentation")
         }
     }
     
     func openApiRequestInWebBrowser(){
-        if let url = URL(string: "https://azure.microsoft.com/en-us/try/cognitive-services/?api=search-api-v7"), NSWorkspace.shared.open(url) {
+        if let url = URL(string: "https://azure.microsoft.com/en-us/try/cognitive-services/?api=search-api-v7?WT.mc_id=cognitiveServices-sampleApp-mijam"), NSWorkspace.shared.open(url) {
             MSAnalytics.trackEvent("User Requested API Key")
         }
     }
